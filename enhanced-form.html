@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo of advanced HTML5 content including lists, tables, media, and a registration form.">
+    <meta name="keywords" content="HTML5, advanced HTML, web development, forms, tables, lists, media, registration, PLP Academy">
+    <meta name="author" content="PLP Academy">
+    <link rel="canonical" href="https://yourdomain.com/enhanced-form.html">
     <title>Enhanced HTML5 Content & Form</title>
   </head>
   <body>
@@ -121,137 +125,131 @@
       </section>
 
       <!-- Form Section -->
-      <section id="form" class="form-section">
-        <h2>Registration Form</h2>
-        <form action="#" autocomplete="on" novalidate>
-          <fieldset>
-            <legend>Personal Information</legend>
-            <label for="fullname"
-              >Full Name <span aria-hidden="true">*</span>
-              <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                required
-                minlength="3"
-                maxlength="40"
-                placeholder="Enter your full name"
-                autocomplete="name"
-              /> </label
-            ><br /><br />
-            <label for="email"
-              >Email <span aria-hidden="true">*</span>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="you@example.com"
-                autocomplete="email"
-              /> </label
-            ><br /><br />
-            <label for="dob"
-              >Date of Birth
-              <input
-                type="date"
-                id="dob"
-                name="dob"
-                min="1900-01-01"
-                max="2025-12-31"
-                autocomplete="bday"
-              />
-            </label>
-          </fieldset>
+    <section id="form" class="form-section">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>General Registration</legend>
+          <label for="fullname"
+          >Full Name <span aria-hidden="true">*</span>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            
+            minlength="3"
+            maxlength="40"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+          /> </label
+          ><br /><br />
+          <label for="email"
+          >Email <span aria-hidden="true">*</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          /> </label
+          ><br /><br />
+          <label for="dob"
+          >Date of Birth
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            min="1900-01-01"
+            max="2025-12-31"
+            autocomplete="bday"
+            required
+          />
+          </label>
           <br /><br />
 
-          <fieldset>
-            <legend>Account Details</legend>
-            <label for="username"
-              >Username <span aria-hidden="true">*</span>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                required
-                pattern="^[a-zA-Z0-9_]{5,15}$"
-                title="5-15 letters, numbers, or underscores"
-                placeholder="Choose a username"
-                autocomplete="username"
-              /> </label
-            ><br /><br />
-            <label for="password"
-              >Password <span aria-hidden="true">*</span>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                minlength="8"
-                placeholder="At least 8 characters"
-                autocomplete="new-password"
-              /> </label
-            ><br /><br />
-            <label for="confirm-password"
-              >Confirm Password <span aria-hidden="true">*</span>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-                required
-                minlength="8"
-                placeholder="Re-enter your password"
-                autocomplete="new-password"
-              />
-            </label>
-          </fieldset>
+          <label for="username"
+          >Username <span aria-hidden="true">*</span>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            
+            pattern="^[a-zA-Z0-9_]{5,15}$"
+            title="5-15 letters, numbers, or underscores"
+            placeholder="Choose a username"
+            autocomplete="username"
+            required
+          /> </label
+          ><br /><br />
+          <label for="password"
+          >Password <span aria-hidden="true">*</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            
+            minlength="8"
+            placeholder="At least 8 characters"
+            autocomplete="new-password"
+            required
+          /> </label
+          ><br /><br />
+          <label for="confirm-password"
+          >Confirm Password <span aria-hidden="true">*</span>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            minlength="8"
+            placeholder="Re-enter your password"
+            autocomplete="new-password"
+          />
+          </label>
           <br /><br />
-          <fieldset>
-            <legend>Preferences</legend>
-            <label for="course"
-              >Preferred Course
-              <select id="course" name="course" required>
-                <option value="" disabled selected>Select a course</option>
-                <option value="html">HTML5</option>
-                <option value="css">CSS3</option>
-                <option value="js">JavaScript</option>
-              </select>
-            </label>
-            <br><br />
-            <label>
-              <input type="checkbox" name="newsletter" value="yes" checked />
-              Subscribe to newsletter
-            </label>
-            <br><br>
-            <label
-              >Gender:
-              <input type="radio" name="gender" value="male" required /> Male
-              <input type="radio" name="gender" value="female" required />
-              Female
-              <input type="radio" name="gender" value="other" required /> Other
-            </label>
-          </fieldset>
+
+          <label for="course"
+          >Preferred Course
+          <select id="course" name="course" required>
+            <option value="" disabled selected>Select a course</option>
+            <option value="html">HTML5</option>
+            <option value="css">CSS3</option>
+            <option value="js">JavaScript</option>
+          </select>
+          </label>
+          <br><br />
+          <label>
+          <input type="checkbox" name="newsletter" value="yes" checked />
+          Subscribe to newsletter
+          </label>
+          <br><br>
+          <label
+          >Gender:
+          <input type="radio" name="gender" value="male" required /> Male
+          <input type="radio" name="gender" value="female" required />
+          Female
+          </label>
           <br><br>
 
-          <fieldset>
-            <legend>Additional Comments</legend>
-            <br>
-            <label for="comments"
-              >Comments
-              <textarea
-                id="comments"
-                name="comments"
-                rows="3"
-                maxlength="300"
-                placeholder="Your feedback..."
-              ></textarea>
-            </label>
-          </fieldset>
+          <label for="comments"
+          >Comments
+          <textarea
+            id="comments"
+            name="comments"
+            rows="3"
+            maxlength="300"
+            placeholder="Your feedback..."
+          ></textarea>
+          </label>
           <br>
-
-          <button type="submit">Register</button>
-          <button type="reset">Reset</button>
-        </form>
-      </section>
+        </fieldset>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
     </main>
 
     <footer>
